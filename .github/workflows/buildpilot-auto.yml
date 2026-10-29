@@ -25,6 +25,8 @@ jobs:
           cache: true
       - name: Generate missing Flutter Android platform files on runner
         run: flutter create . --platforms=android
+      - name: Apply Android plugin compatibility settings
+        run: python3 tool/patch_android.py
       - name: Install Flutter dependencies
         run: flutter pub get
       - name: Build release APK
