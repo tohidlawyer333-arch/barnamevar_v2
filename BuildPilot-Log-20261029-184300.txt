@@ -1,0 +1,9 @@
+2026-10-29 18:43:06 [INFO] Project: C:\Users\ASUS\Desktop\برنامه یار\barnamevar_v2
+2026-10-29 18:43:08 [OK] GitHub user: tohidlawyer333-arch
+2026-10-29 18:43:08 [INFO] Type: flutter
+2026-10-29 18:43:15 [OK] Repo created: tohidlawyer333-arch/barnamevar_v2 (--public)
+2026-10-29 18:43:19 [INFO] Pushed faa85bc5da4b8e92b6fdb461aa5ae313b1099a46
+2026-10-29 18:43:27 [INFO] Run 40899343756 started; watching...
+2026-10-29 18:46:26 [ERROR] Build failed (round 0). Last log lines:
+failed to get run log: Get "https://results-receiver.actions.githubusercontent.com/rest/runs/1a23eddc-7048-4514-b051-fa14e707c3a4/logs?filename=logs_110865458845.zip&signature=1793286975.7f77df580d20aad2cd283cef5e6301801d665c75380efbdfd6f87884a68d6fe7": net/http: TLS handshake timeout
+2026-10-29 18:46:26 [ERROR] No automatic fix known. See log lines above for exact cause.
