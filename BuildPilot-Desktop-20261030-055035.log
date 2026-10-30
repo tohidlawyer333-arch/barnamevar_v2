@@ -1,0 +1,79 @@
+[2026-10-30 05:50:35] [STEP] شروع فرایند بیلد دسکتاپ BuildPilot
+[2026-10-30 05:50:35] [INFO] پوشه پروژه: C:\Users\ASUS\Desktop\برنامه یار 1\barnamevar_v2
+[2026-10-30 05:50:35] [CMD] $ gh auth status --hostname github.com
+[2026-10-30 05:50:36] [OUT] github.com
+[2026-10-30 05:50:36] [OUT]   ✓ Logged in to github.com account tohidlawyer333-arch (keyring)
+[2026-10-30 05:50:36] [OUT]   - Active account: true
+[2026-10-30 05:50:36] [OUT]   - Git operations protocol: https
+[2026-10-30 05:50:37] [OUT]   - Token: gho_************************************
+[2026-10-30 05:50:37] [OUT]   - Token scopes: 'gist', 'read:org', 'repo', 'workflow'
+[2026-10-30 05:50:37] [CMD] $ gh auth setup-git
+[2026-10-30 05:50:37] [CMD] $ git --version
+[2026-10-30 05:50:37] [OUT] git version 2.55.0.windows.2
+[2026-10-30 05:50:37] [CMD] $ gh api user --jq .login
+[2026-10-30 05:50:38] [OUT] tohidlawyer333-arch
+[2026-10-30 05:50:38] [OK] حساب GitHub: tohidlawyer333-arch
+[2026-10-30 05:50:38] [INFO] مخزن هدف: tohidlawyer333-arch/barnamevar_v2
+[2026-10-30 05:50:38] [OK] نوع پروژه: Flutter؛ نوع بیلد: FlutterAndroid
+[2026-10-30 05:50:38] [CMD] $ gh repo view tohidlawyer333-arch/barnamevar_v2 --json nameWithOwner --jq .nameWithOwner
+[2026-10-30 05:50:39] [OUT] tohidlawyer333-arch/barnamevar_v2
+[2026-10-30 05:50:39] [INFO] مخزن از قبل وجود دارد؛ نسخه پروژه به‌روزرسانی می‌شود.
+[2026-10-30 05:50:39] [CMD] $ gh repo view tohidlawyer333-arch/barnamevar_v2 --json defaultBranchRef --jq ".defaultBranchRef.name // "main""
+[2026-10-30 05:50:39] [OUT] main
+[2026-10-30 05:50:40] [CMD] $ git clone https://github.com/tohidlawyer333-arch/barnamevar_v2.git C:\Users\ASUS\AppData\Local\Temp\BuildPilot-Desktop-e14364dcc9444b2fa1baa487f007a714
+[2026-10-30 05:50:40] [ERR] Cloning into 'C:\Users\ASUS\AppData\Local\Temp\BuildPilot-Desktop-e14364dcc9444b2fa1baa487f007a714'...
+[2026-10-30 05:50:42] [CMD] $ git -C C:\Users\ASUS\AppData\Local\Temp\BuildPilot-Desktop-e14364dcc9444b2fa1baa487f007a714 branch --show-current
+[2026-10-30 05:50:42] [OUT] main
+[2026-10-30 05:50:42] [CMD] $ git -C C:\Users\ASUS\AppData\Local\Temp\BuildPilot-Desktop-e14364dcc9444b2fa1baa487f007a714 config user.name "BuildPilot Desktop"
+[2026-10-30 05:50:42] [CMD] $ git -C C:\Users\ASUS\AppData\Local\Temp\BuildPilot-Desktop-e14364dcc9444b2fa1baa487f007a714 config user.email buildpilot@users.noreply.github.com
+[2026-10-30 05:50:42] [CMD] $ git -C C:\Users\ASUS\AppData\Local\Temp\BuildPilot-Desktop-e14364dcc9444b2fa1baa487f007a714 add -A
+[2026-10-30 05:50:42] [ERR] warning: in the working copy of '.github/buildpilot/patch_flutter_android.py', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:43] [ERR] warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:43] [ERR] warning: in the working copy of 'ARCHITECTURE.md', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:43] [ERR] warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:43] [ERR] warning: in the working copy of 'analysis_options.yaml', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:43] [ERR] warning: in the working copy of 'lib/core/contrast.dart', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:43] [ERR] warning: in the working copy of 'lib/core/jalali.dart', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:43] [ERR] warning: in the working copy of 'lib/core/persian.dart', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:43] [ERR] warning: in the working copy of 'lib/data/backup_service.dart', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:43] [ERR] warning: in the working copy of 'lib/data/ics_exporter.dart', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:43] [ERR] warning: in the working copy of 'lib/data/task_repository.dart', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:43] [ERR] warning: in the working copy of 'lib/domain/recurrence.dart', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:44] [ERR] warning: in the working copy of 'lib/domain/reminder_planner.dart', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:44] [ERR] warning: in the working copy of 'lib/domain/task.dart', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:44] [ERR] warning: in the working copy of 'lib/features/calendar_screen.dart', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:44] [ERR] warning: in the working copy of 'lib/features/providers.dart', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:44] [ERR] warning: in the working copy of 'lib/features/settings_sheet.dart', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:44] [ERR] warning: in the working copy of 'lib/features/task_form.dart', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:44] [ERR] warning: in the working copy of 'lib/main.dart', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:44] [ERR] warning: in the working copy of 'lib/notifications/notification_service.dart', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:44] [ERR] warning: in the working copy of 'lib/occasions/holidays.dart', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:44] [ERR] warning: in the working copy of 'lib/occasions/occasion_rule.dart', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:44] [ERR] warning: in the working copy of 'lib/widget/BarnamevarWidgetProvider.kt', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:45] [ERR] warning: in the working copy of 'pubspec.yaml', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:45] [ERR] warning: in the working copy of 'test/domain_test.dart', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:45] [ERR] warning: in the working copy of 'test/jalali_test.dart', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:45] [ERR] warning: in the working copy of 'test/widget_test.dart', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:45] [ERR] warning: in the working copy of 'tool/patch_android.py', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:45] [ERR] warning: in the working copy of 'tool/verify_project.py', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:45] [ERR] warning: in the working copy of '.github/workflows/android_ci.yml', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:45] [ERR] warning: in the working copy of '.github/workflows/buildpilot.yml', LF will be replaced by CRLF the next time Git touches it
+[2026-10-30 05:50:45] [CMD] $ git -C C:\Users\ASUS\AppData\Local\Temp\BuildPilot-Desktop-e14364dcc9444b2fa1baa487f007a714 diff --cached --quiet
+[2026-10-30 05:50:45] [CMD] $ git -C C:\Users\ASUS\AppData\Local\Temp\BuildPilot-Desktop-e14364dcc9444b2fa1baa487f007a714 commit -m "BuildPilot: sync project and configure automated build"
+[2026-10-30 05:50:46] [OUT] [main 806c622] BuildPilot: sync project and configure automated build
+[2026-10-30 05:50:46] [OUT]  5 files changed, 64 insertions(+), 179 deletions(-)
+[2026-10-30 05:50:46] [OUT]  delete mode 100644 .autobuilder/universal_android_patcher.py
+[2026-10-30 05:50:46] [OUT]  create mode 100644 .github/workflows/android_ci.yml
+[2026-10-30 05:50:46] [OUT]  delete mode 100644 .github/workflows/autobuilder_ci.yml
+[2026-10-30 05:50:46] [OUT]  create mode 100644 .github/workflows/buildpilot.yml
+[2026-10-30 05:50:46] [OUT]  delete mode 100644 BuildPilot-Desktop-20261030-054103.log
+[2026-10-30 05:50:46] [CMD] $ git -C C:\Users\ASUS\AppData\Local\Temp\BuildPilot-Desktop-e14364dcc9444b2fa1baa487f007a714 rev-parse HEAD
+[2026-10-30 05:50:46] [OUT] 806c622dd45ccabefd7da2b9d6fe733390fc802d
+[2026-10-30 05:50:46] [STEP] ارسال سورس و گردش‌کار به شاخه main ...
+[2026-10-30 05:50:46] [CMD] $ git -C C:\Users\ASUS\AppData\Local\Temp\BuildPilot-Desktop-e14364dcc9444b2fa1baa487f007a714 push -u origin main
+[2026-10-30 05:50:49] [OUT] branch 'main' set up to track 'origin/main'.
+[2026-10-30 05:50:49] [ERR] To https://github.com/tohidlawyer333-arch/barnamevar_v2.git
+[2026-10-30 05:50:49] [ERR]    008aa19..806c622  main -> main
+[2026-10-30 05:50:49] [CMD] $ gh workflow run buildpilot.yml --repo tohidlawyer333-arch/barnamevar_v2 --ref main
+[2026-10-30 05:50:50] [ERR] could not create workflow dispatch event: HTTP 422: Workflow does not have 'workflow_dispatch' trigger (https://api.github.com/repos/tohidlawyer333-arch/barnamevar_v2/actions/workflows/400763940/dispatches)
+[2026-10-30 05:50:50] [ERROR] خطای نهایی: دستور با کد 1 متوقف شد: gh
