@@ -1,4 +1,0 @@
-2026-10-29 19:15:27 [INFO] Project: C:\Users\ASUS\Desktop\برنامه یار\barnamevar_v2
-2026-10-29 19:15:30 [OK] GitHub user: tohidlawyer333-arch
-2026-10-29 19:15:30 [INFO] Type: flutter
-2026-10-29 19:15:30 [ERROR] The property 'Count' cannot be found on this object. Verify that the property exists.

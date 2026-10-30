@@ -1,8 +1,0 @@
-{
-  "tool": "BuildPilot",
-  "schemaVersion": 2,
-  "repository": "tohidlawyer333-arch/barnamevar_v2-buildpilot",
-  "projectType": "flutter",
-  "workflow": ".github/workflows/buildpilot-auto.yml",
-  "updatedAtUtc": "2026-10-30T00:38:02.3292356Z"
-}
