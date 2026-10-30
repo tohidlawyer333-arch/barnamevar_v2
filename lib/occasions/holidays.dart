@@ -1,96 +1,16 @@
-// GENERATED from official calendar tables; all entries are non-working days.
-// year -> list of (month, day, title)
-class Holiday {
-  const Holiday(this.month, this.day, this.title);
-  final int month;
-  final int day;
-  final String title;
-}
-
-const officialHolidays = <int, List<Holiday>>{
-  1403: [
-    Holiday(1, 1, 'آغاز نوروز'),
-    Holiday(1, 2, 'عید نوروز'),
-    Holiday(1, 3, 'عید نوروز'),
-    Holiday(1, 4, 'عید نوروز'),
-    Holiday(1, 12, 'روز جمهوری اسلامی ایران'),
-    Holiday(1, 13, 'شهادت حضرت علی (ع) / روز طبیعت'),
-    Holiday(1, 22, 'عید سعید فطر'),
-    Holiday(1, 23, 'تعطیل به مناسبت عید سعید فطر'),
-    Holiday(2, 15, 'شهادت امام جعفر صادق (ع)'),
-    Holiday(3, 14, 'رحلت امام خمینی'),
-    Holiday(3, 15, 'قیام خونین 15 خرداد'),
-    Holiday(3, 28, 'عید سعید قربان'),
-    Holiday(4, 5, 'عید سعید غدیر خم'),
-    Holiday(4, 25, 'تاسوعای حسینی'),
-    Holiday(4, 26, 'عاشورای حسینی'),
-    Holiday(6, 4, 'اربعین حسینی'),
-    Holiday(6, 12, 'رحلت حضرت رسول اکرم (ص) / شهادت امام حسن مجتبی (ع)'),
-    Holiday(6, 14, 'شهادت امام رضا (ع)'),
-    Holiday(6, 22, 'شهادت امام حسن عسکری (ع) / آغاز امامت حضرت ولیعصر (عج)'),
-    Holiday(6, 31, 'ولادت حضرت رسول اکرم (ص) / ولادت امام جعفر صادق (ع)'),
-    Holiday(9, 15, 'شهادت حضرت فاطمه زهرا (س)'),
-    Holiday(10, 25, 'ولادت امام علی (ع) / روز پدر'),
-    Holiday(11, 9, 'مبعث حضرت رسول اکرم (ص)'),
-    Holiday(11, 22, 'پیروزی انقلاب اسلامی ایران'),
-    Holiday(11, 26, 'ولادت حضرت قائم عجل الله تعالی فرجه'),
-    Holiday(12, 29, 'روز ملی شدن صنعت نفت ایران'),
-    Holiday(12, 30, 'براساس لایحه قانونی تعیین تعطیلات رسمی کشور مصوب سال 1359، از 29 اسفند تا 4 فروردین تعطیل رسمی است.'),
-  ],
-  1404: [
-    Holiday(1, 1, 'آغاز نوروز'),
-    Holiday(1, 2, 'شهادت حضرت علی (ع) / عید نوروز'),
-    Holiday(1, 3, 'عید نوروز'),
-    Holiday(1, 4, 'عید نوروز'),
-    Holiday(1, 11, 'عید سعید فطر'),
-    Holiday(1, 12, 'تعطیل به مناسبت عید سعید فطر / روز جمهوری اسلامی ایران'),
-    Holiday(1, 13, 'روز طبیعت'),
-    Holiday(2, 4, 'شهادت امام جعفر صادق (ع)'),
-    Holiday(3, 14, 'رحلت امام خمینی'),
-    Holiday(3, 15, 'قیام خونین 15 خرداد'),
-    Holiday(3, 16, 'عید سعید قربان'),
-    Holiday(3, 24, 'عید سعید غدیر خم'),
-    Holiday(4, 14, 'تاسوعای حسینی'),
-    Holiday(4, 15, 'عاشورای حسینی'),
-    Holiday(5, 23, 'اربعین حسینی'),
-    Holiday(5, 31, 'رحلت حضرت رسول اکرم (ص) / شهادت امام حسن مجتبی (ع)'),
-    Holiday(6, 2, 'شهادت امام رضا (ع)'),
-    Holiday(6, 10, 'شهادت امام حسن عسکری (ع) / آغاز امامت حضرت ولیعصر (عج)'),
-    Holiday(6, 19, 'ولادت حضرت رسول اکرم (ص) / ولادت امام جعفر صادق (ع)'),
-    Holiday(9, 3, 'شهادت حضرت فاطمه زهرا (س)'),
-    Holiday(10, 13, 'ولادت امام علی (ع) / روز پدر'),
-    Holiday(10, 27, 'مبعث حضرت رسول اکرم (ص)'),
-    Holiday(11, 15, 'ولادت حضرت قائم عجل الله تعالی فرجه'),
-    Holiday(11, 22, 'پیروزی انقلاب اسلامی ایران'),
-    Holiday(12, 20, 'شهادت حضرت علی (ع)'),
-    Holiday(12, 29, 'روز ملی شدن صنعت نفت ایران'),
-  ],
-  1405: [
-    Holiday(1, 1, 'عید سعید فطر / آغاز نوروز'),
-    Holiday(1, 2, 'تعطیل به مناسبت عید سعید فطر / عید نوروز'),
-    Holiday(1, 3, 'عید نوروز'),
-    Holiday(1, 4, 'عید نوروز'),
-    Holiday(1, 12, 'روز جمهوری اسلامی ایران'),
-    Holiday(1, 13, 'روز طبیعت'),
-    Holiday(1, 25, 'شهادت امام جعفر صادق (ع)'),
-    Holiday(3, 6, 'عید سعید قربان'),
-    Holiday(3, 14, 'عید سعید غدیر خم / رحلت امام خمینی'),
-    Holiday(3, 15, 'قیام خونین 15 خرداد'),
-    Holiday(4, 3, 'تاسوعای حسینی'),
-    Holiday(4, 4, 'عاشورای حسینی'),
-    Holiday(5, 13, 'اربعین حسینی'),
-    Holiday(5, 21, 'رحلت حضرت رسول اکرم (ص) / شهادت امام حسن مجتبی (ع)'),
-    Holiday(5, 22, 'شهادت امام رضا (ع)'),
-    Holiday(5, 30, 'شهادت امام حسن عسکری (ع) / آغاز امامت حضرت ولیعصر (عج)'),
-    Holiday(6, 8, 'ولادت حضرت رسول اکرم (ص) / ولادت امام جعفر صادق (ع)'),
-    Holiday(8, 22, 'شهادت حضرت فاطمه زهرا (س)'),
-    Holiday(10, 2, 'ولادت امام علی (ع) / روز پدر'),
-    Holiday(10, 16, 'مبعث حضرت رسول اکرم (ص)'),
-    Holiday(11, 4, 'ولادت حضرت قائم عجل الله تعالی فرجه'),
-    Holiday(11, 22, 'پیروزی انقلاب اسلامی ایران'),
-    Holiday(12, 9, 'شهادت حضرت علی (ع)'),
-    Holiday(12, 19, 'عید سعید فطر'),
-    Holiday(12, 20, 'تعطیل به مناسبت عید سعید فطر'),
-    Holiday(12, 29, 'روز ملی شدن صنعت نفت ایران'),
-  ],
+import 'occasion_rule.dart';
+// Source for official lunar observances: مرکز تقویم مؤسسه ژئوفیزیک دانشگاه تهران,
+// تقویم رسمی کشور ۱۴۰۳، ۱۴۰۴ و ۱۴۰۵. Lunar dates below follow the published Iranian calendar.
+// ۱۴۰۵: عید قربان ۶ خرداد = ۱۰ ذی‌الحجه ۱۴۴۷ = 2026-05-27; غدیر ۱۴ خرداد;
+// تاسوعا ۴ تیر and عاشورا ۵ تیر ۱۴۰۵. These are fixed official calendar dates.
+const _common=[
+ OccasionRule('nowruz','نوروز',1,1,isHoliday:true),OccasionRule('nowruz2','نوروز',1,2,isHoliday:true),OccasionRule('nature','سیزده‌بدر',1,13,isHoliday:true),
+ OccasionRule('yalda','شب یلدا',9,30),OccasionRule('tirgan','تیرگان',4,13),OccasionRule('mehregan','مهرگان',7,16),OccasionRule('cyrus','روز کوروش',8,7),OccasionRule('ferdowsi','روز فردوسی',2,25),OccasionRule('hafez','روز حافظ',7,20),
+ OccasionRule('mother','روز مادر',10,20),OccasionRule('father','روز پدر',1,13),
+];
+const Map<int,List<OccasionRule>> officialHolidays={
+ 1403:[..._common,OccasionRule('eid-fitr','عید فطر',1,12,isHoliday:true),OccasionRule('eid-fitr2','تعطیلی عید فطر',1,13,isHoliday:true),OccasionRule('eid-qurban','عید قربان',3,27,isHoliday:true),OccasionRule('ghadir','عید غدیر',4,4,isHoliday:true),OccasionRule('tasua','تاسوعا',4,24,isHoliday:true),OccasionRule('ashura','عاشورا',4,25,isHoliday:true)],
+ 1404:[..._common,OccasionRule('eid-fitr','عید فطر',1,1,isHoliday:true),OccasionRule('eid-fitr2','تعطیلی عید فطر',1,2,isHoliday:true),OccasionRule('eid-qurban','عید قربان',3,16,isHoliday:true),OccasionRule('ghadir','عید غدیر',3,24,isHoliday:true),OccasionRule('tasua','تاسوعا',4,13,isHoliday:true),OccasionRule('ashura','عاشورا',4,14,isHoliday:true)],
+ 1405:[..._common,OccasionRule('eid-fitr','عید فطر',12,29,isHoliday:true),OccasionRule('eid-qurban','عید قربان',3,6,isHoliday:true),OccasionRule('ghadir','عید غدیر',3,14,isHoliday:true),OccasionRule('tasua','تاسوعا',4,4,isHoliday:true),OccasionRule('ashura','عاشورا',4,5,isHoliday:true)],
 };
+List<OccasionRule> occasions(int year)=>officialHolidays[year]??_common;

@@ -1,0 +1,6 @@
+import 'task.dart';
+import '../core/jalali.dart';
+class RecurrenceCalculator {
+ static DateTime next(Task t) { final d=t.due; final j=Jalali.fromGregorian(d); switch(t.recurrence){case Recurrence.none:return d;case Recurrence.daily:return d.add(const Duration(days:1));case Recurrence.weekly: if(t.weekdays.isEmpty)return d.add(const Duration(days:7)); var n=d.add(const Duration(days:1)); for(var i=0;i<8;i++,n=n.add(const Duration(days:1))) if(t.weekdays.contains(n.weekday%7))return n; return d.add(const Duration(days:7));case Recurrence.monthly:var y=j.year,m=j.month+1;if(m==13){y++;m=1;} final jd=j.day>Jalali.daysInMonth(y,m)?Jalali.daysInMonth(y,m):j.day; final g=Jalali(y,m,jd).toGregorian();return DateTime(g.year,g.month,g.day,d.hour,d.minute);case Recurrence.yearly:final y=j.year+1;final day=j.day>Jalali.daysInMonth(y,j.month)?Jalali.daysInMonth(y,j.month):j.day;final g=Jalali(y,j.month,day).toGregorian();return DateTime(g.year,g.month,g.day,d.hour,d.minute);}}
+ static List<Task> complete(Task t){if(t.recurrence==Recurrence.none)return [t.copyWith(isDone:true,isArchived:true)];final current=t.copyWith(isDone:true,isArchived:true);final nextTask=t.copyWith(id:'${t.id}_${next(t).millisecondsSinceEpoch}',due:next(t),isDone:false,isArchived:false);return [current,nextTask];}
+}

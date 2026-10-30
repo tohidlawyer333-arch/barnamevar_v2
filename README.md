@@ -1,21 +1,20 @@
-# برنامه‌یار
+# برنامه‌ور | Barnamevar
 
-اپ اندروید (Flutter) برای مدیریت کارها با تقویم شمسی، یادآوری و مناسبت‌های ۱۴۰۵.
+برنامه‌ریز فارسی با تقویم جلالی، مدیریت کارها، یادآور، تکرار، خروجی ICS و پشتیبان رمزگذاری‌شده.
 
-## ساخت
-نیازمند Flutter stable و JDK 17.
-```
-flutter create --platforms=android --org ir.barnamevar --project-name barnamevar .
-rm -f test/widget_test.dart
-python3 tool/patch_android.py
+## پیش‌نیاز و اجرا
+Flutter stable و Dart 3.3+ لازم است:
+```sh
 flutter pub get
-flutter analyze --no-fatal-infos && flutter test
-flutter build apk --release
+flutter run
 ```
-(پوشه‌ی android عمداً در زیپ نیست؛ دستور اول می‌سازد. در GitHub همین کار را `.github/workflows/build.yml` می‌کند.)
-`tool/patch_android.py` مجوزهای اعلان و desugaring را خودکار اضافه می‌کند.
+برای APK: `python3 tool/patch_android.py .` و سپس `flutter build apk --release`.
+اگر پوشهٔ Android در checkout شما scaffold نشده، ابتدا `flutter create --platforms=android .` را اجرا کنید. ابزار پچ، منابع ویجت را در ساختار استاندارد Android نصب می‌کند و مجوزها و receiver را به manifest موجود اضافه می‌کند؛ اجرای مجدد امن است.
 
-## وضعیت
-- بررسی نشده: هیچ‌کدام از مراحل بالا در این محیط اجرا نشد (Flutter در دسترس نبود)؛ فقط CI تعیین‌کننده است.
-- منطق شمسی و فهرست تعطیلات ۱۴۰۳–۱۴۰۵ آماده است.
-- ناقص نسبت به طرح اولیه: Drift، go_router، ویجت خانه، پشتیبان رمزنگاری‌شده، ۷ تم، یادآوری مبتنی بر قانون مناسبت‌ها (قوانین هست، زمان‌بندی نیست). ذخیره‌سازی با shared_preferences است.
+## آزمون
+```sh
+flutter analyze
+flutter test
+python3 tool/patch_android.py /path/to/flutter/project
+```
+کارها به صورت محلی در SharedPreferences نگهداری می‌شوند. فایل پشتیبان `.bvb` با AES-GCM و کلید مشتق‌شده از گذرواژه رمزگذاری می‌شود. مجوزهای اعلان و آلارم دقیق ممکن است برحسب Android و تنظیمات دستگاه متفاوت باشند.

@@ -1,0 +1,14 @@
+name: AutoBuilder CI\non:\n  workflow_dispatch:\n  push:\n    branches: ['**']\npermissions:\n  contents: read\njobs:\n  android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: '17' }
+      - uses: subosito/flutter-action@v2
+        with: { channel: stable }
+      - name: Patch Android project
+        run: python .autobuilder/universal_android_patcher.py
+      - name: Build release APK
+        run: flutter pub get && flutter build apk --release
+      - uses: actions/upload-artifact@v4
+        with: { name: android-release-apk, path: build/app/outputs/flutter-apk/app-release.apk, if-no-files-found: error }

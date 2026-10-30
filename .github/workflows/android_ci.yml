@@ -1,0 +1,19 @@
+name: Android CI
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  analyze-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test
+      - name: Patch Android widget resources
+        run: python3 tool/patch_android.py .
